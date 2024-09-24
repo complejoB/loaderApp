@@ -1,0 +1,9 @@
+<div class="image-container"> 
+  <ng-container *ngFor="let image of images; let i = index">
+    <img [src]="image.src" [alt]="image.text" [ngClass]="{'active': i === currentIndex}">
+  </ng-container>
+  <div class="overlay"></div>
+  <div class="text-container">
+    <h2>{{ images[currentIndex]?.text }}</h2>
+  </div>
+</div>

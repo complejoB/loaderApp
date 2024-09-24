@@ -1,0 +1,19 @@
+<app-loader *ngIf="showLoader" [config]="1" (loaderFinished)="onLoaderFinished()"></app-loader>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="toolbar-content">
+      <ion-title class="toolbar-title">Examen Práctico Front</ion-title>
+      <ion-chip class="user-chip">
+        <ion-avatar>
+          <img alt="Miguel Angel Espinosa Pérez" src="assets/avatar.webp" />
+        </ion-avatar>
+        <ion-label>Miguel</ion-label>
+      </ion-chip>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="content">
+  <div class="center-container">
+    <ion-button (click)="startLoader()" class="center-text">Comenzar Loader</ion-button>
+  </div>
+</ion-content>
